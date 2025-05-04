@@ -1,0 +1,30 @@
+{
+  "name": "sync-autoreboot",
+  "version": "1.0.0",
+  "description": "Node.js watchdog that reboots the system if the local time is out of sync or the timestamp server is unreachable.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "node app.js --client",
+    "start:server": "node app.js --server",
+    "start:both": "node app.js --server --client",
+    "start:devclient": "NODE_ENV=development node app.js --client",
+    "start:devserver": "NODE_ENV=development node app.js --server",
+    "start:devboth": "NODE_ENV=development node app.js --server --client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baudracco/sync-autoreboot.git"
+  },
+  "author": "Sergio Baudracco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Baudracco/sync-autoreboot/issues"
+  },
+  "homepage": "https://github.com/Baudracco/sync-autoreboot#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  }
+}
